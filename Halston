@@ -1,0 +1,32 @@
+/*
+ * File: Hailstone.java
+ * --------------------
+ * This program is a stub for the Hailstone problem, which computes
+ * Hailstone sequence described in Assignment #2.
+ */
+
+import acm.program.*;
+
+public class Hailstone extends ConsoleProgram {
+
+	public void run() {
+	
+		int n=readInt("Enter n: ");
+		
+		while((n!=0)&&(n!=1)){
+			if(n%2==0){
+				n=n/2;
+				println("n was even, so I divided it by 2. I got " + n + ".");
+			} else if((n%2!=0)&&(n!=1)){
+				n=n*3;
+				n=n+1;
+				println("n was odd, so I multiplied it by 3 and added 1. I got " + n + ".");
+			}  if(n==1){
+				println("n is now " + n + ".");
+			}
+		}
+			
+		}
+	}
+
+
